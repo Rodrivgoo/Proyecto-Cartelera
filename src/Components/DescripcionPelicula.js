@@ -12,6 +12,7 @@ const DescripcionPelicula = () => {
     const [peliculasIds, setPeliculasIds] = useState([]);
     const [currentIndex, setCurrentIndex] = useState(0);
 
+
     useEffect(() => {
         const fetchPeliculasIds = async () => {
             const apiKey = '2e86bc9495548e9a7b0206823c2fdc34';

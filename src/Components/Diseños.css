@@ -200,14 +200,60 @@ body {
 }
 
 .social-icons {
-    margin-top: 10px;
+    margin-top: 1px;
 }
 
 .social-icons a {
     margin: 0 10px;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .DivFooter {
     margin-top: 100px;
+}
+.carrusel-primeras-cinco {
+    margin: 0 auto; 
+}
+
+.carrusel-imagen {
+    width: 100%;
+    height: auto; 
+    object-fit: cover;
+    margin-bottom: 60px;
+}
+.palabras {
+    text-align: center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-box-right {
+    width: 100%;
+
+    margin-bottom: 50px;
+    text-align: right;
+}
+
+@media (max-width: 10000px) {
+    .carrusel-primeras-cinco {
+        max-width: 30%; 
+    }
+    .palabras{
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 1000px) {
+    .palabras{
+        font-size: 18px;
+    }
+}
+@media (max-width: 767px) {
+    .palabras{
+        font-size: 14px;
+    }
+}
+@media (max-width: 320px) {
+    .palabras{
+        font-size: 110px;
+    }
 }

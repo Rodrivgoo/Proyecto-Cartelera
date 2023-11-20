@@ -34,4 +34,3 @@ const Navbar = ({ currentIndex, peliculasIds }) => {
 };
 
 export default Navbar;
-
