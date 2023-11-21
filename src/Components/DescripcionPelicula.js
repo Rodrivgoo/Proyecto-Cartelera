@@ -16,7 +16,7 @@ const DescripcionPelicula = () => {
     useEffect(() => {
         const fetchPeliculasIds = async () => {
             const apiKey = '2e86bc9495548e9a7b0206823c2fdc34';
-            const response = await fetch(`https://api.themoviedb.org/3/movie/now_playing?api_key=${apiKey}&language=es`);
+            const response = await fetch(`https://api.themoviedb.org/3/movie/now_playing?api_key=${apiKey}&language= es`);
             const data = await response.json();
             const ids = data.results.map(movie => movie.id);
             setPeliculasIds(ids);
