@@ -89,6 +89,14 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
+    position: relative;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 
 .card:hover {
@@ -108,6 +116,7 @@ body {
     border: none;
     display: flex;
     justify-content: center;
+    margin-top: auto;
 }   
 
 .btn-primary:hover {
@@ -221,6 +230,11 @@ body {
     object-fit: cover;
     margin-bottom: 60px;
 }
+
+.slick-slider {
+    width: 100%;
+}
+
 .palabras {
     text-align: center; 
     display: flex;
@@ -234,6 +248,62 @@ body {
     text-align: right;
 }
 
+.search-box-right {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.search-box-right input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 200px; 
+    font-size: 16px;
+}
+
+.search-box-right button {
+    background-color: #007bff;
+    border: none;
+    color: var(--white-color);
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.search-box-right button:hover {
+    background-color: #0056b3;
+}
+
+.carrusel-imagen {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1000px) {
+    .carrusel-imagen {
+        height: 300px;
+    }
+}
+@media (max-width: 767px) {
+    .search-box-right {
+        text-align: center;
+    }
+
+    .search-box-right input,
+    .search-box-right button {
+        width: 100%;
+    }
+
+    .carrusel-imagen {
+        height: 250px;
+    }
+}
 @media (max-width: 10000px) {
     .carrusel-primeras-cinco {
         max-width: 30%; 
